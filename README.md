@@ -29,3 +29,6 @@ Project is fully configured and ready for the Cloudflare Agents Day submission.
 
 ## 🌐 Why Cloudflare?
 This agent leverages **Cloudflare Workers AI** for low-latency inference and **Wrangler** for seamless deployment on the edge.
+
+## 📺 Video Demo
+[Watch the AI Fitness Coach in Action](https://www.youtube.com/watch?v=c1H269aFqJk)
