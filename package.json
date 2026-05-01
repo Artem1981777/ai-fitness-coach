@@ -1,0 +1,13 @@
+{
+  "name": "ai-fitness-coach",
+  "version": "1.0.0",
+  "description": "AI Fitness Coach agent for Cloudflare Agents Day",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["cloudflare-workers", "ai-agent", "fitness", "llama-3"],
+  "author": "Artem1981777",
+  "license": "MIT"
+}
