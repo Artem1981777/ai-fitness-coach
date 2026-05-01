@@ -1,27 +1,27 @@
 # ⚡ Iron Terminal: AI Fitness Coach
 
-Интеллектуальная CLI-система управления тренировками, работающая на грани Edge-вычислений и нейросетей.
+An intelligent CLI-based workout management system powered by Edge Computing and LLMs.
 
-## 🚀 Технологический стек
+## 🚀 Tech Stack
 * **Core:** Cloudflare Workers (Serverless Architecture)
 * **Intelligence:** Meta Llama 3 (via Cloudflare AI)
 * **Storage:** Cloudflare KV (Persistent State)
 * **Interface:** Bash CLI / Interactive Terminal
 
-## 🛠 Функционал
-* **Interactive Chat:** Полноценный чат с тренером через `./coach.sh`.
-* **Smart Context:** Тренер знает ваше имя, цели и историю последних тренировок.
-* **Auto-Logging:** Система автоматически выхватывает ключевые слова (км, кг, упражнения) и сохраняет их в базу.
-* **Expert Analytics:** Команда `./report.sh` генерирует отчет на основе спортивной науки (RPE, прогрессия нагрузок).
+## 🛠 Features
+* **Multilingual AI:** Automatically detects and responds in your language (English, Russian, etc.).
+* **Interactive Chat:** Seamless coaching experience via `./coach.sh`.
+* **Smart Context:** The coach remembers your name, goals, and workout history.
+* **Auto-Logging:** Recognizes workout metrics (km, kg, reps) and saves them to the cloud.
+* **Expert Analytics:** Generates science-based progress reports via `./report.sh`.
 
-## 📈 Roadmap (План развития)
-На основе внутреннего аудита системы намечены следующие улучшения:
-1. **Structured Logging:** Переход на JSON-схемы для точного трекинга весов и повторений.
-2. **Local AI Backup:** Интеграция с Ollama для работы в офлайн-режиме.
-3. **Advanced TUI:** Создание интерфейса на Python (библиотека Rich) для графиков прогресса в терминале.
-4. **Long-term Memory:** Внедрение векторной базы данных для хранения контекста за месяцы тренировок.
+## 📈 Roadmap
+1. **Structured Logging:** Transition to JSON schemas for precise metric tracking.
+2. **Local AI Backup:** Integration with Ollama for offline-first capabilities.
+3. **Advanced TUI:** Python-based terminal interface with progress visualization.
+4. **Long-term Memory:** Vector database integration for multi-month context.
 
-## 💻 Установка
-1. Клонировать репозиторий.
-2. Настроить API URL в скриптах.
-3. Запустить `./coach.sh`.
+## 💻 Quick Start
+1. Clone the repository.
+2. Configure your API URL in the scripts.
+3. Run `./coach.sh`.
