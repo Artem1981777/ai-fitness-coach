@@ -41,3 +41,6 @@ Traditional fitness apps are bloated, slow, and privacy-invasive. **Iron Termina
 2. **KV Storage:** Create a KV namespace named `KV` and bind it to your worker.
 3. **Environment:** Set your Worker URL in `coach.sh` and `report.sh`.
 4. **Run:** Execute `chmod +x *.sh` and start with `./coach.sh`.
+
+## Project Preview
+![Iron Terminal Bot Demo](demo.jpg)
