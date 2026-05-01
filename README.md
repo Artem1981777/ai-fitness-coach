@@ -1,3 +1,5 @@
+<p align="center"><img src="https://i.postimg.cc/85xwkqwM/IMG-20260501-144046.jpg" width="200"></p>
+
 # 🦾 Iron Terminal Coach
 
 **Iron Terminal Coach** — это интеллектуальный AI-агент, разработанный для хакатона **Cloudflare Agents Day**. Он помогает пользователям планировать тренировки и анализировать физическую форму прямо через терминал или веб-интерфейс, используя мощь Cloudflare Workers AI.
