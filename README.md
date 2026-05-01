@@ -1,46 +1,34 @@
-# ⚡ Iron Terminal: AI Fitness Coach
+# 🏋️ Iron Terminal Coach
 
-## 🏗 Architecture (Edge AI)
-* **Live Demo:** [t.me/IronTerminal_Coach_bot](https://t.me/IronTerminal_Coach_bot)
+**Autonomous AI Fitness Agent** running on Cloudflare Workers & Llama 3. Built entirely via Termux.
 
-```text
-[ User (Termux) ] <---> [ Cloudflare Workers ] <---> [ Meta Llama 3 ]
-                              |
-                       [ Cloudflare KV ] (Fast Global Storage)
+## 🤖 Structured Intelligence
+The agent doesn't just chat; it processes data into structured insights:
+```json
+{
+  "user_intent": "workout_request",
+  "focus_muscles": ["legs", "back"],
+  "calculated_volume": "112.5kg total",
+  "progression": "+5% from last session",
+  "status": "ready_to_generate"
+}
 ```
 
-An intelligent CLI-based workout management system powered by Edge Computing and LLMs.
+## 🛠 Quick Deployment
+1. **Telegram**: Create a bot via @BotFather.
+2. **Cloudflare KV**: 
+   - Create namespace: `npx wrangler kv:namespace create USER_DATA`
+   - Add ID to `wrangler.toml`.
+3. **Secrets**: `npx wrangler secret put TELEGRAM_BOT_TOKEN`
+4. **Deploy**: `npx wrangler deploy`
 
-## 💡 Why It Matters
-Traditional fitness apps are bloated, slow, and privacy-invasive. **Iron Terminal** brings professional coaching to the fastest environment possible: the command line. It’s designed for those who value speed, data ownership, and edge computing efficiency.
-
-## 🚀 Tech Stack
-* **Core:** Cloudflare Workers (Serverless Architecture)
-* **Intelligence:** Meta Llama 3 (via Cloudflare AI)
-* **Storage:** Cloudflare KV (Persistent State)
-* **Interface:** Bash CLI / Interactive Terminal
-
-## 🛠 Features
-* **Structured Intelligence:** Uses JSON Mode for precise workout data extraction.
-* **Multilingual AI:** Automatically detects and responds in your language (English, Russian, etc.).
-* **Smart Context:** The coach remembers your name, goals, and workout history.
-* **Expert Analytics:** Generates science-based progress reports via `./report.sh`.
-
-## 📈 Roadmap
-1. **Advanced TUI:** Python-based terminal interface with progress visualization.
-2. **Local AI Backup:** Integration with Ollama for offline-first capabilities.
-3. **Long-term Memory:** Vector database integration for multi-month context.
-
-## 💻 Quick Start
-1. Clone the repository.
-2. Configure your API URL in the scripts.
-3. Run `./coach.sh`.
-
-## ⚙️ Setup & Deployment
-1. **Cloudflare Worker:** Deploy `agent-code.js` to Cloudflare Workers.
-2. **KV Storage:** Create a KV namespace named `KV` and bind it to your worker.
-3. **Environment:** Set your Worker URL in `coach.sh` and `report.sh`.
-4. **Run:** Execute `chmod +x *.sh` and start with `./coach.sh`.
+## 🗺 Roadmap
+- [x] Core AI Logic (Llama 3 integration)
+- [x] State Management (Cloudflare KV)
+- [x] Workout Analysis Engine
+- [x] Terminal-ready UI (Markdown)
+- [ ] Adaptive Weight Progression (Auto 1RM)
+- [ ] Export to PDF via Agent
 
 ## Project Preview
 ![Iron Terminal Bot Demo](demo.jpg)
