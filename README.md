@@ -1,6 +1,8 @@
 # ⚡ Iron Terminal: AI Fitness Coach
 
 ## 🏗 Architecture (Edge AI)
+* **Live Demo:** [t.me/IronTerminal_Coach_bot](https://t.me/IronTerminal_Coach_bot)
+
 ```text
 [ User (Termux) ] <---> [ Cloudflare Workers ] <---> [ Meta Llama 3 ]
                               |
