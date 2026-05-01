@@ -1,19 +1,27 @@
-# AI Fitness Coach (Termux + Cloudflare Edge)
+# ⚡ Iron Terminal: AI Fitness Coach
 
-Интеллектуальная система управления тренировками.
+Интеллектуальная CLI-система управления тренировками, работающая на грани Edge-вычислений и нейросетей.
 
-### Технологии:
-* **Backend:** Cloudflare Workers (Serverless)
-* **AI Model:** Meta Llama 3 (via Cloudflare AI)
-* **Database:** Cloudflare KV (Persistent Storage)
-* **Interface:** Bash CLI (Termux)
+## 🚀 Технологический стек
+* **Core:** Cloudflare Workers (Serverless Architecture)
+* **Intelligence:** Meta Llama 3 (via Cloudflare AI)
+* **Storage:** Cloudflare KV (Persistent State)
+* **Interface:** Bash CLI / Interactive Terminal
 
-### Функции:
-1. **Chat:** Общение с тренером в реальном времени.
-2. **Persistence:** Сохранение целей и логов тренировок в облаке.
-3. **Analytics:** Автоматический анализ прогресса на основе данных в базе.
+## 🛠 Функционал
+* **Interactive Chat:** Полноценный чат с тренером через `./coach.sh`.
+* **Smart Context:** Тренер знает ваше имя, цели и историю последних тренировок.
+* **Auto-Logging:** Система автоматически выхватывает ключевые слова (км, кг, упражнения) и сохраняет их в базу.
+* **Expert Analytics:** Команда `./report.sh` генерирует отчет на основе спортивной науки (RPE, прогрессия нагрузок).
 
-### Использование:
-* `./chat.sh "сообщение"` — общение.
-* `./status.sh` — текущий профиль из базы.
-* `./report.sh` — аналитический отчет.
+## 📈 Roadmap (План развития)
+На основе внутреннего аудита системы намечены следующие улучшения:
+1. **Structured Logging:** Переход на JSON-схемы для точного трекинга весов и повторений.
+2. **Local AI Backup:** Интеграция с Ollama для работы в офлайн-режиме.
+3. **Advanced TUI:** Создание интерфейса на Python (библиотека Rich) для графиков прогресса в терминале.
+4. **Long-term Memory:** Внедрение векторной базы данных для хранения контекста за месяцы тренировок.
+
+## 💻 Установка
+1. Клонировать репозиторий.
+2. Настроить API URL в скриптах.
+3. Запустить `./coach.sh`.
